@@ -1,0 +1,38 @@
+let fSection = document.querySelector("body main section");
+fSection.setAttribute("class","featured");
+let nArticle = document.createElement("article");
+let newImg = document.createElement("img");
+newImg.setAttribute("src","./images/paul-gilmore-unsplash.jpg");
+newImg.setAttribute("alt","Image of a mountain in front of a lake.");
+let newH3 = document.createElement("h3");
+newH3.innerText = "Stop Planning";
+let newPtag1 = document.createElement("p");
+newPtag1.innerText = "You -- yes you! You're an over-planner, I can tell. It's time to stop planning so much and instead focusing on relaxing. Taking a break at all is so stressful these days; why add to the stress by overworking yourself?";
+let newPtag2= document.createElement("p");
+let newAside = document.createElement("aside");
+let newSpan = document.createElement("span");
+newSpan.innerText = " 4 Minutes";
+let newStrong = document.createElement("strong");
+newStrong.innerText = "Read Time:";
+let newAtag = document.createElement("a");
+newAtag.setAttribute("href","#");
+newAtag.innerText = "Read more...";
+let postSection = document.querySelector("section.posts");
+
+postSection.append(nArticle);
+nArticle.prepend(newImg);
+newImg.after(newH3);
+newH3.after(newPtag1);
+newPtag1.after(newAside);
+newAside.prepend(newPtag2);
+newPtag2.prepend(newSpan);
+newSpan.prepend(newStrong);
+newSpan.after(newAtag);
+
+let allArticles = document.querySelectorAll(".posts article");
+let articleOne = allArticles[0];
+let articleTwo = allArticles[1];
+allArticles[0].remove();
+allArticles[1].remove();
+postSection.prepend(articleOne);
+postSection.prepend(articleTwo);
