@@ -5,8 +5,8 @@ rt.classList.add('featured')
 let nt = document.querySelector('.posts')
 
 let newart = document.createElement('article')
-newart.innerHTML = 
-`<img
+newart.innerHTML =
+    `<img
   src="./images/paul-gilmore-unsplash.jpg"
   alt="Image of a mountain in front of a lake."
 />
@@ -25,6 +25,13 @@ newart.innerHTML =
 `
 nt.appendChild(newart)
 
+const psection = document.querySelector(".posts");
 
- 
+const firsta = psection.children[0];
+const seconda = psection.children[1];
+
+psection.insertBefore(seconda, firsta);
+
+
+
 
