@@ -60,16 +60,6 @@ aTag.setAttribute("href", "#");
 aTag.textContent = "Read more...";
 pTag2.append(aTag);
 
-// const img = document.createElement("img");
-// console.log(img);
-
-// img.append(article);
-// article.append(img);
-// const img = document.createElement("img");
-// const addedImg = document.querySelector("article");
-// addedImg.append(img);
-// console.log(addedImg);
-
 //Question 3
 let articles = document.querySelectorAll("section.posts article");
 console.log(articles);
