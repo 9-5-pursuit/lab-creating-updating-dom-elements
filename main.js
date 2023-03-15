@@ -53,11 +53,20 @@ aTag.setAttribute("href", "#");
 
 aTag.textContent = "Read more";
 
-// const stChild = document.querySelector(".posts article");
+//could have done this instead with innerHTML
+// const aside = document.createElement('aside');
+// aside.innerHTML = "<p><span><strong>Read Time:</strong> 4 Minutes</span><a href='#'>Read more...</a></p>";
+// article.append(aside);
 
-//  console.log(stChild);
+ const stChild = document.querySelector(".posts article");
 
-// const ndChild = document.querySelector("section.posts :nth-child(2) ");
+ console.log(stChild);
 
-//  console.log(ndChild)
+ const ndChild = document.querySelector("section.posts article:nth-child(2) ");
+
+ console.log(ndChild);
+
+ ndChild.after(stChild);
+
+
 
