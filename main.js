@@ -45,4 +45,4 @@ const allSectionPosts = document.querySelectorAll(".posts article");
 // console.log(allSectionPosts[0]);
 // console.log(allSectionPosts[1]);
 
-allSectionPosts[1].append(allSectionPosts[0]);
+allSectionPosts[1].after(allSectionPosts[0]);
