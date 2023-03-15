@@ -8,24 +8,20 @@ document.querySelector("section:first-child").classList.add("featured")
 
 document.querySelector("section.posts").append(article)
 
-let newArticle = document.querySelector("section.posts article:last-child")
+article.append(img)
+img.setAttribute("src", "./images/paul-gilmore-unsplash.jpg")
+img.setAttribute("alt", "Image of a mountain in front of a lake.")
 
-newArticle.classList.add("new-article")
-
-newArticle.append(img)
-document.querySelector(".new-article img").setAttribute("src", "./images/paul-gilmore-unsplash.jpg")
-document.querySelector(".new-article img").setAttribute("alt", "Image of a mountain in front of a lake.")
-
-newArticle.append(h3)
+article.append(h3)
 h3.textContent = "Stop Planning"
 
-newArticle.append(p)
+article.append(p)
 p.textContent = `You -- yes you! You're an over-planner, I can tell. 
 It's time to stop planning so much and instead focusing on relaxing. 
 Taking a break at all is so stressful these days; 
 why add to the stress by overworking yourself?`
 
-newArticle.append(aside)
+article.append(aside)
 aside.innerHTML = `<p>
 <span><strong>Read Time:</strong> 4 Minutes</span
 ><a href="#">Read more...</a>
