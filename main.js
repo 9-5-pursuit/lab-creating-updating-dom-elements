@@ -3,7 +3,7 @@ const featureClass = document.querySelector("section");
 featureClass.setAttribute("class", "featured");
 
 // create new article post
-const newPost = document.querySelector("section.posts");
+const newPost = document.querySelector(".posts");
 const newArticle = document.createElement("article");
 newPost.append(newArticle);
 
@@ -24,7 +24,8 @@ newArticle.append(p);
 const aside = document.createElement("aside");
 const asideP = document.createElement("p");
 asideP.innerHTML = `<span><Strong>Read Time:</strong> 4 Minutes</span> <a href="#">Read more...</a>`;
-newArticle.append(asideP);
+aside.append(asideP);
+newArticle.append(aside);
 
 // first and second article switch places
 
