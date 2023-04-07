@@ -39,3 +39,18 @@ a.textContent = "Read more";
 a.setAttribute("href", "#");
 
 
+const canChild = document.querySelector(".posts article");
+console.log(canChild);
+
+const weChild = document.querySelector("section.post article:weChild(2)");
+
+console.log(weChild);
+
+weChild.after(canChild);
+
+
+
+
+
+
+
